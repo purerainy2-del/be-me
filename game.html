@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9e4d8">
+  <meta name="description" content="Be Myself：一款关于选择、处境与重新落笔的单人互动叙事游戏。">
+  <title>Be Myself · 人生之书</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="game.html"><span>BE MYSELF</span><small>人生之书 / 001</small></a>
+    <div class="top-actions"><span id="save-state">本机保存</span><button id="sound" type="button" aria-pressed="false">声音 · 关</button><button id="about" type="button">创作手记 ↗</button></div>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer><span>一部关于选择如何留下痕迹的互动叙事</span><span>NO SCORE · NO RIGHT ANSWER</span></footer>
+  <dialog id="dialog"><button class="dialog-close" type="button" aria-label="关闭">×</button><div id="dialog-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="game.js"></script>
+</body>
+</html>
